@@ -1,11 +1,14 @@
-
-wiki_edit(){
+wiki(){
   vim -c VimwikiIndex
   source activate py35
   vim -c VimwikiIndex -c VimwikiAll2HTML -c q 
   source deactivate
 }
 
-wiki(){
+wiki_html(){
   sudo google-chrome-stable ${HOME}/Dropbox/wiki/html/index.html  --no-sandbox
+}
+
+wiki_cd(){
+  cd ${HOME}/Dropbox/wiki/markdown
 }
