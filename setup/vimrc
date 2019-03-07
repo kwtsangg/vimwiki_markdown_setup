@@ -16,3 +16,14 @@ let g:vimwiki_ext = '.md' " set extension to .md
 let g:vimwiki_global_ext = 0 " make sure vimwiki doesn't own all .md files
 let g:vimwiki_use_mouse = 1
 let g:vimwiki_markdown_link_ext = 1
+
+" Automatically clean the unused html
+" https://www.reddit.com/r/vim/comments/766cgb/vimwiki_automaticly_remove_unused_html_files/
+function! VimwikiDeleteClean()
+  let htmlfile = expand('%:r') . '.html'
+  lcd ${HOME}/Dropbox/wiki/html/
+  call delete(htmlfile)
+  lcd %:p:h
+  call vimwiki#base#delete_link()
+endfunction
+autocmd filetype vimwiki nnoremap <buffer> <leader>wd :call VimwikiDeleteClean()<CR>
