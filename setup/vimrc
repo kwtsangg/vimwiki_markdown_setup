@@ -1,0 +1,18 @@
+" Vimwiki
+set nocompatible
+filetype plugin on
+syntax on
+let g:vimwiki_list = [{'path': '$HOME/Dropbox/wiki/markdown',
+                      \"path_html": "$HOME/Dropbox/wiki/html/",
+                      \"syntax": "markdown", 
+                      \"ext": ".md",
+                      \"css_file": "$HOME/Dropbox/wiki/templates/markdown.css",
+                      \'custom_wiki2html': '$HOME/Dropbox/wiki/scripts/vimwiki_markdown.py',
+                      \'template_path': '$HOME/Dropbox/wiki/templates',
+                      \'template_default': 'default',
+                      \'template_ext': '.html',
+                      \"auto_export": 0}]
+let g:vimwiki_ext = '.md' " set extension to .md
+let g:vimwiki_global_ext = 0 " make sure vimwiki doesn't own all .md files
+let g:vimwiki_use_mouse = 1
+let g:vimwiki_markdown_link_ext = 1
