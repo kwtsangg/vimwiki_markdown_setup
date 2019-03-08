@@ -1,13 +1,3 @@
-<script type="text/javascript">
-var pcs = document.lastModified.split(" ");
-var date = pcs[0].split("/");
-date = date[1] + '/' + date[0] + '/' + date[2];
-var time = pcs[1];
-onload = function(){
-    document.getElementById("lastModified").innerHTML = "Page last changed " + date + ", " + time;
-}
-</script>
-
 <html>
 <head>
     <link rel="Stylesheet" type="text/css" href="/home/kwtsang/Dropbox/wiki/templates/markdown.css" />
@@ -22,7 +12,4 @@ onload = function(){
     %content%
     </div>
 </body>
-
-<br/>
-<span id="lastModified"></span>
 </html>
