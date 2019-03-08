@@ -71,7 +71,8 @@ def main():
     output_file = os.path.join(OUTPUT_DIR, filename + ".html")
 
     # Setup markdown parser
-    md = markdown.Markdown(extensions=["extra", "admonition", "codehilite", "legacy_em", "meta", "nl2br", "sane_lists", "smarty", "toc", "wikilinks"])
+    #md = markdown.Markdown(extensions=["extra", "abbr", "attr_list", "def_list", "fenced_code", "footnotes", "tables", "admonition", "codehilite", "legacy_em", "meta", "nl2br", "sane_lists", "smarty", "toc", "wikilinks"])
+    md = markdown.Markdown(extensions=["extra"])
     md.inlinePatterns.deregister("link")
     md.inlinePatterns.register(
         LinkInlineProcessor(markdown.inlinepatterns.LINK_RE, md), "link", 160
