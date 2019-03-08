@@ -27,3 +27,9 @@ function! VimwikiDeleteClean()
   call vimwiki#base#delete_link()
 endfunction
 autocmd filetype vimwiki nnoremap <buffer> <leader>wd :call VimwikiDeleteClean()<CR>
+
+" TimeStamp
+map <F4> :r! date +"\%Y-\%m-\%d \%H:\%M:\%S"<cr>
+
+" disable the <tab> mapping provided by vimwiki, which interferes with SuperTab
+let g:vimwiki_table_mappings = 0

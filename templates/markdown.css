@@ -60,6 +60,7 @@ p, ul, ol {
     font-size: 16px;
     line-height: 24px;
     max-width: 540px;
+    text-decoration-color: #F2FC23;
 }
 pre {
     padding: 0px 24px;
@@ -260,6 +261,33 @@ button::-moz-focus-inner {
   border: 0;
 }
 
+/*
+ *
+ *
+ * MY MODIFICATION
+ *
+ *
+ *
+ */
+
+
+/* line in table */
 td, th {
     border: 1px solid grey
+}
+
+/* background */
+body {
+  background: linear-gradient(#ef8402, #efb46b);
+}
+
+/* Stop link changing color after being clicked
+ * https://stackoverflow.com/questions/8188060/how-to-make-link-not-change-color-after-visited/8188105 */
+a:link, a:visited {
+    color: #663d00;
+}
+
+p {
+  color: #663d00;
+  font-size: 32px;
 }
