@@ -6,7 +6,7 @@ wiki(){
 }
 
 wiki_html(){
-  sudo google-chrome-stable ${HOME}/Dropbox/wiki/html/index.html  --no-sandbox
+  sudo google-chrome-stable ${HOME}/Dropbox/wiki/html/index.html --no-sandbox >/dev/null 2>&1
 }
 
 wiki_cd(){
