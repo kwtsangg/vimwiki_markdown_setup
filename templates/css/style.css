@@ -14,8 +14,8 @@ dt {font-weight: bold;}
 img {border: none;}
 pre {border-left: 1px solid #cccccc !important; margin-left: 2em !important; padding-left: 0.5em !important;}
 blockquote {padding: 0.4em; background-color: #f6f5eb;}
-th, td {border: 1px solid #ccc; padding: 0.3em;}
-th {background-color: #f0f0f0;}
+th, td {border: 1px solid #ccc; padding: 0.3em; color: #ffcc00;}
+th {background-color: #000000; overflow-x:auto;}
 hr {border: none; border-top: 1px solid #ccc; width: 100%;}
 del {text-decoration: line-through; color: #777777;}
 .toc li {list-style-type: none;}
