@@ -98,7 +98,10 @@ h6{color : #cddc39  !important;
 }
 
 .navbar{
-	background-color: #333 !important;
+  background-color: #000 !important;
+  max-width: 1000px;
+  padding: 10px;
+  margin: auto;
 }
 
 .title{
@@ -107,7 +110,7 @@ h6{color : #cddc39  !important;
 
 .navbar-nav > li > a {padding-top:2px !important; padding-bottom:2px !important;}
 .navbar {
-	min-height:32px !important
+	min-height:16px !important
 }
 
 
