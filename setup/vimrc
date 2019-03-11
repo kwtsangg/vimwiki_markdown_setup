@@ -33,3 +33,5 @@ map <F4> :r! date +"\%Y-\%m-\%d \%H:\%M:\%S"<cr>
 
 " disable the <tab> mapping provided by vimwiki, which interferes with SuperTab
 let g:vimwiki_table_mappings = 0
+
+set tabstop=4     " (ts) width (in spaces) that a <tab> is displayed as
