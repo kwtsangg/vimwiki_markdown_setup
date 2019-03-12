@@ -1,8 +1,12 @@
-wiki(){
-  vim -c VimwikiIndex
+wiki_compile(){
   source activate py35
   vim -c VimwikiIndex -c VimwikiAll2HTML -c q 
   source deactivate
+}
+
+wiki(){
+  vim -c VimwikiIndex
+  wiki_compile
 }
 
 wiki_html(){
