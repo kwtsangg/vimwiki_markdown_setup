@@ -6,10 +6,11 @@
 
 
 1. [Article](article/article)
-2. [Diary](diary/diary)
-3. [Note](note/note)
-4. [System](system/system)
-5. [Other](other/other)
+2. [Code](code/code)
+3. [Diary](diary/diary)
+4. [Note](note/note)
+5. [System](system/system)
+6. [Other](other/other)
 
 # Markdown usage
 

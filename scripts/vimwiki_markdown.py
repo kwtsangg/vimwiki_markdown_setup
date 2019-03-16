@@ -120,6 +120,18 @@ def main():
         # Parse content
         content = md.convert(content)
 
+        # Extra modification to fix the code block issue
+        content = content.split("<code>")
+        for i in range(len(content))[1:]:
+          tmp = content[i].split("\n",1)
+          code_name = tmp[0]
+          remaining = tmp[1]
+          tmp = remaining.split("</code>",1)
+          code_content = tmp[0]
+          remaining = tmp[1]
+          content[i] = "<pre><code class='%s'>%s</code></pre>%s" % (code_name, code_content, remaining)
+        content = "".join(content)
+
         # Merge template
         template = template.replace("%content%", content)
 
